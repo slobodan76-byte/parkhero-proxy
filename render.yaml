@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: parkhero-proxy
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: UPSTREAM_URL
+        value: ""
+      - key: UPSTREAM_AUTH
+        value: ""
+      - key: CACHE_TTL
+        value: "60"
+      - key: REDIS_URL
+        value: ""
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: PORT
+        value: "8080"

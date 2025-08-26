@@ -1,0 +1,19 @@
+{
+  "name": "parkhero-proxy-prod",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2",
+    "pino": "^9.1.0",
+    "pino-http": "^9.0.0"
+  }
+}
